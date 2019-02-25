@@ -13,4 +13,3 @@ Feature: Homepage
     Examples: 
       | keyword |
       | tshirt  |
-      | jeans  |

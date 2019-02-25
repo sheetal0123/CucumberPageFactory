@@ -46,7 +46,7 @@ public class HomeStepDefs {
 		searchpage = new SearchPage(driver);
 		String url = searchpage.getUrl();
 		System.out.println(">>> SRP Url:  " + url);
-		Assert.assertTrue("Wrong SRP", url.contains("?q=" + keyword + "&"));
+		Assert.assertTrue("Wrong SRP", url.contains("?tt=" + keyword + "&rank="));
 	}
-
+	 
 }

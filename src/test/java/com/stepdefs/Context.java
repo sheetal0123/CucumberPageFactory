@@ -16,7 +16,7 @@ public class Context {
 		System.out.println("***** Context: Inside Setup,  val: " + initialized);
 		if (!initialized) {
 			String path = System.getProperty("user.dir");
-			System.setProperty("webdriver.chrome.driver", path + "/src/test/resources/drivers/chromedriver3");
+			System.setProperty("webdriver.chrome.driver", path + "/src/test/resources/drivers/chromedriver.exe");
 			driver = new ChromeDriver();
 			initialized = true;
 			System.out.println("***** Context: Initializing Driver   " + driver);

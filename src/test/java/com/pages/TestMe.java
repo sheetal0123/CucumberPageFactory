@@ -10,14 +10,14 @@ public class TestMe {
 
 	public void firefox() {
 		String path = System.getProperty("user.dir");
-		System.setProperty("webdriver.gecko.driver", path + "/src/test/resources/drivers/geckodriver");
+		System.setProperty("webdriver.gecko.driver", path + "/src/test/resources/drivers/geckodriver.exe");
 		driver = new FirefoxDriver();
 		driver.get("https://www.google.co.in/");
 	}
 
 	public void chrome() {
 		String path = System.getProperty("user.dir");
-		System.setProperty("webdriver.chrome.driver", path + "/src/test/resources/drivers/chromedriver3");
+		System.setProperty("webdriver.chrome.driver", path + "/src/test/resources/drivers/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get("https://www.google.co.in/");
 	}
